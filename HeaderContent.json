@@ -2,89 +2,83 @@
   {
     "label": "Home",
     "type": "internal",
-
     "current": {
-      "pathname": "/",
-      "operator": "equals"
+      "pathname": "/"
     },
-    "handleClick": { "link": "/" }
+    "handleClick": {
+      "link": "/"
+    }
   },
-  {
+ {
     "label": "Categories",
     "type": "internal",
     "current": {
-      "pathname": "/categories",
-      "operator": "includes"
+      "pathname": "/categories"
     },
     "handleClick": {
       "link": "/categories"
     }
   },
-  {
+ {
     "label": "Applications",
     "type": "internal",
     "current": {
-      "pathname": "/applications",
-      "operator": "includes"
+      "pathname": "/applications"
     },
-    "handleClick": { "link": "/applications" }
+    "handleClick": {
+      "link": "/applications"
+    }
   },
   {
     "label": "Components",
     "current": {
-      "pathname": "/components",
-      "operator": "includes"
+      "pathname": "/components"
     },
     "subItems": [
-      {
+   {
         "label": "All components",
         "type": "internal",
         "current": {
-          "pathname": "/components",
-          "operator": "includes"
+          "pathname": "/components"
         },
-        "handleClick": { "link": "/components" }
+        "handleClick": {
+          "link": "/components"
+        }
       },
-      {
+     {
         "label": "Processes",
         "type": "internal",
         "current": {
           "pathname": "/components",
-          "operator": "includes",
           "filterCondition": {
-            "filter": "embedded.nl.embedded.commonground.layerType",
-            "value": "process",
-            "isObject": true
+            "filterKey": "embedded.nl.embedded.commonground.layerType",
+            "value": "process"
           }
         },
         "handleClick": {
           "link": "/components",
           "type": "internal",
           "setFilter": {
-            "filter": "embedded.nl.embedded.commonground.layerType",
-            "value": "process",
-            "isObject": true
+            "filterKey": "embedded.nl.embedded.commonground.layerType",
+            "value": "process"
           }
         }
       },
-      {
+     {
         "label": "Data models",
         "type": "internal",
         "current": {
           "pathname": "/components",
-          "operator": "includes",
           "filterCondition": {
-            "filter": "embedded.nl.embedded.commonground.layerType",
-            "value": "data",
-            "isObject": true
+            "filterKey": "embedded.nl.embedded.commonground.layerType",
+            "value": "data"
           }
         },
         "handleClick": {
           "link": "/components",
           "setFilter": {
-            "filter": "embedded.nl.embedded.commonground.layerType",
-            "value": "data",
-            "isObject": true
+            "filterKey": "embedded.nl.embedded.commonground.layerType",
+            "value": "data"
           }
         }
       },
@@ -93,41 +87,45 @@
         "type": "internal",
         "current": {
           "pathname": "/components",
-          "operator": "includes",
           "filterCondition": {
-            "filter": "embedded.nl.embedded.commonground.layerType",
-            "value": "service",
-            "isObject": true
+            "filterKey": "embedded.nl.embedded.commonground.layerType",
+            "value": "service"
           }
         },
         "handleClick": {
           "link": "/components",
           "setFilter": {
-            "filter": "embedded.nl.embedded.commonground.layerType",
-            "value": "service",
-            "isObject": true
+            "filterKey": "embedded.nl.embedded.commonground.layerType",
+            "value": "service"
           }
         }
       }
     ]
   },
-  {
+ {
     "label": "Organizations",
     "type": "internal",
     "current": {
-      "pathname": "/organizations",
-      "operator": "includes"
+      "pathname": "/organizations"
     },
-    "handleClick": { "link": "/organizations" }
+    "handleClick": {
+      "link": "/organizations"
+    }
   },
-  {
+   {
     "label": "Initiatives",
     "type": "internal",
-    "current": "pathname === \"/components\" && filters.developmentStatus === \"concept\"",
+    "current": {
+      "pathname": "/components",
+      "filterCondition": {
+        "filterKey": "developmentStatus",
+        "value": "concept"
+      }
+    },
     "handleClick": {
       "link": "/components",
       "setFilter": {
-        "filter": "developmentStatus",
+        "filterKey": "developmentStatus",
         "value": "concept"
       }
     }
@@ -137,8 +135,9 @@
     "type": "external",
     "current": {
       "pathname": "/documentation",
-      "operator": "includes"
     },
-    "handleClick": { "link": "https://documentatie.opencatalogi.nl/" }
+    "handleClick": {
+          "link": "https://documentatie.opencatalogi.nl/"
+        }
   }
 ]
