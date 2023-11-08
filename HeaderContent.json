@@ -8,7 +8,7 @@
     "handleClick": {
       "link": "/"
     }
-  },
+ },
  {
     "label": "Categories",
     "type": "internal",
@@ -134,10 +134,10 @@
     "label": "Documentatie",
     "type": "external",
     "current": {
-      "pathname": "/documentation",
+      "pathname": "/documentation"
     },
     "handleClick": {
           "link": "https://documentatie.opencatalogi.nl/"
-        }
+    }
   }
 ]
