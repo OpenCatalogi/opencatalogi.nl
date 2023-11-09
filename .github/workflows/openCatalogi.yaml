@@ -29,3 +29,6 @@ jobs:
           favicon_logo: 'https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png'
           navbar_logo: 'https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png'
           footer_logo: 'https://dev.opencatalogi.nl/static/logo_OpenCatalogi-8b1b0a001c3f37dae4d3f69b5964ec72.png'
+          jumbotron_title: "OpenCatalogi"
+          jumbotron_description: "Eén centrale plek voor hergebruik van informatietechnologie binnen de overheid"
+          jumbotron_searchform: true
