@@ -18,10 +18,10 @@ jobs:
         with:
           opencatalogi: true
       - name: Create an Open Catalogi page
-        uses: OpenCatalogi/opencatalogi-action@1.1.4
+        uses: OpenCatalogi/opencatalogi-action@1.1.7
         with:
           github_repository_name_as_prefix: false
-          nl_design_theme_classname: 'rotterdam-theme'
+          nl_design_theme_classname: 'opencatalogi-theme'
           pull_from_branche: 'development'
           start_page: 'false'
           footer_content: 'https://raw.githubusercontent.com/OpenCatalogi/opencatalogi.nl/main/FooterContent.json'
